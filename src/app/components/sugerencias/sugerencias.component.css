@@ -1,0 +1,15 @@
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: seashell;
+  }
+  tr {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      font-size: 1.0em;
+    }
+    td,th {
+      display: inline-block;
+      width: 22%;
+      margin-right: 2%;
+    }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sugerencias</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.css">	
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    
+
+</head>
+
+<body style="background-color: azure; height: auto;">
+
+    <!-- Menú-->
+
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <img class="pl-5" src="/assets/images/logopekeblanco.png" alt="logoimage">
+        </a>
+        <a class="navbar-brand" style="color:white" href="/home/{{idPropietario}}">
+            Atrás <div><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></div>
+        </a>
+    </nav>
+
+    <!-- Menú-->
+        <div class="container">
+        <div class="row">
+        <div class="col-6 p-4" *ngFor="let perfil of sugerencias">  
+    <div class="card bordercards shadowcards" style="height: 100%;">
+        <img class="img-thumbnail mx-auto d-block bordercards"  style="height: 420px;" src="/assets/images/{{perfil.image}}" alt="Image Icon">
+                <div class="card-body">
+                    <h5 class="card-title">{{perfil.nombre}}</h5>
+                    <p class="card-text">{{perfil.descripcion}}</p>   
+                    <ul class="list-group list-group-flush">
+                        Edad: <li class="list-group-item" style="background-color:azure">{{perfil.edad}}</li>
+                        Género: <li class="list-group-item" style="background-color:azure">{{perfil.genero}}</li>
+                        Provincia: <li class="list-group-item" style="background-color:azure">{{perfil.provincia.nombre}}</li>
+                    </ul>
+                
+                </div> 
+                <div class="card-body" style="text-align: center; letter-spacing: 3rem">
+                    <a (click)="aceptar(perfil)" class="card-link" style="color:limegreen; font-size: 1.5rem"><i class="pl-3 fa fa-heart fa-2x" aria-hidden="true"></i></a>
+                    <a (click)="descartar(perfil)" class="card-link" style="color:red; font-size: 1.5rem"><i class="pl-3 fa fa-times fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- cuadrado blanco principal -->
+    
+
+  <script src="/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/assets/vendor/animsition/js/animsition.min.js"></script>
+	<script src="/assets/vendor/bootstrap/js/popper.js"></script>
+	<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/assets/vendor/select2/select2.min.js"></script>
+	<script src="/assets/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/assets/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="/assets/vendor/countdowntime/countdowntime.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+</body></html>

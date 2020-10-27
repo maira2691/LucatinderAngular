@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.css">	
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/util.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  
+    
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="/logout">
+    <img class="pl-5" src="assets/images/logopekeblanco.png" alt="logoimage">
+    </a>
+    <a class="navbar-brand" style="color:white" href="/login">
+        Cerrar Sesion <div><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></div>
+    </a>
+</nav>
+
+
+<!-- Menú-->
+
+
+<!------------------ Hover Effect Style : Demo - 7 --------------->
+
+
+<div class="limiter">
+  <div class="container-login100">
+    
+
+
+    <div class="container mt-40">
+        <h3 class="text-center">
+            <span *ngIf='perfil.genero==="H"'>BIENVENIDO</span>
+            <span *ngIf='perfil.genero==="M"'>BIENVENIDA</span>
+            <span *ngIf='perfil.genero==="O"'>BIENVENID@</span>
+            {{perfil.nombre}} </h3>
+        <div class="row mt-30"> 
+          <div class="col-md-6 col-sm-4">
+              <div class="box7">
+                  <img  src="/assets/images/sugestionsicon.PNG" alt="">
+                  <div class="box-content">
+                      <h3 class="title">Sugerencias</h3>
+                      <ul class="icon">
+                          <li><a (click)="toSugerencias()" class="fa fa-search"></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-4">
+              <div class="box7">
+                  <img  src="/assets/images/contacticon.PNG" alt="">
+                  <div class="box-content">
+                      <h3 class="title">Contactos</h3>
+                      <ul class="icon">
+                          <li><a (click)="toContactos()" class="fa fa-search"></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-4">
+              <div class="box7">
+                  <img  src="/assets/images/matchicon.PNG" alt="">
+                  <div class="box-content">
+                      <h3 class="title">Matchs</h3>
+                      <ul class="icon">
+                          <li><a (click)="toMatchs()" class="fa fa-search"></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-4">
+            <div class="box7">
+                <img src="/assets/images/discardsicon.PNG"alt="">
+                <div class="box-content">
+                    <h3 class="title">Descartes</h3>
+                    <ul class="icon">
+                        <li><a (click)="toDescartes()" class="fa fa-search"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<script src="/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/assets/vendor/animsition/js/animsition.min.js"></script>
+	<script src="/assets/vendor/bootstrap/js/popper.js"></script>
+	<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/assets/vendor/select2/select2.min.js"></script>
+	<script src="/assets/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/assets/vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="/assets/vendor/countdowntime/countdowntime.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+</body></html>
